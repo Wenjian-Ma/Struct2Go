@@ -1,4 +1,4 @@
-# Protein-Function-Prediction-using-Alphafold-Predicted-3D-structures
+# Code for paper "Is the AlphaFold Predicted Protein Structure Comparable to the Experimentally Solved Structure in Predicting Protein Function? A Comparative Study"
 Dependencies
 ---
 
