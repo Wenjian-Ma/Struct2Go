@@ -1,4 +1,5 @@
 # Code for paper "Is the AlphaFold Predicted Protein Structure Comparable to the Experimentally Solved Structure in Predicting Protein Function? A Comparative Study"
+
 Dependencies
 ---
 
@@ -24,10 +25,6 @@ Model preparation
    
    Unzip the model file to **Struct2Go/saved_models/**.
 
-Train
----
-python main.py
-
 Test
 ---
 python test.py
@@ -35,6 +32,10 @@ python test.py
 Test for external validation set
 ---
 python external_test.py
+
+Train
+---
+python main.py
 
 If you need pdb files we collectd:
 ---
