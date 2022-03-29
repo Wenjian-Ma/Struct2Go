@@ -292,7 +292,7 @@ if __name__ == "__main__":
     parser.add_argument('--func', type=lambda s: [item for item in s.split(",")],
                         default=['mf','bp','cc'], help="list of func to predict.")#'mf','bp',
     parser.add_argument('--data', type=lambda s: [item for item in s.split(",")],
-                        default=['pdb_amplifed'], help="data source.")#,'pdb_amplifed'，'pdb_no_amplifed'
+                        default=['pdb_amplifed','pdb_no_amplifed'], help="data source.")#,'pdb_amplifed'，'pdb_no_amplifed',
     parser.add_argument('--learning_rate', type=float,
                         default=0.0001, help="learning rate.")
     parser.add_argument('--Epoch', type=int,
