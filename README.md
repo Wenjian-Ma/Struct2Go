@@ -1,4 +1,5 @@
-# Code for paper "Is the AlphaFold Predicted Protein Structure Comparable to the Experimentally Solved Structure in Predicting Protein Function? A Comparative Study"
+Code for paper "Enhancing protein function prediction performance by utilizing AlphaFold-predicted protein structures"
+---
 
 Dependencies
 ---
@@ -13,21 +14,28 @@ numpy == 1.21.2
 
 Data preparation
 ---
-Unzip **contact_map_dense_alphafold_8.0.tar.gz**, **contact_map_dense_pdb_8.0.tar.gz** and **contact_map_dense_pdb_8.0_for_external_test.tar.gz** to **Struct2Go/data_collect/**
+1. Unzip ''**contact_map_dense_alphafold_8.0.tar.gz**'', ''**contact_map_dense_pdb_8.0.tar.gz**'' and ''**contact_map_dense_pdb_8.0_for_external_test.tar.gz**'' to **Struct2Go/data_collect/**
+2. Unzip ''**contact_map_6582_8.0.tar.gz**'' to **Struct2Go/data_collect/amplify_samples/**
 
 Model preparation
 ---
-1. Trained models for MF-, BP-, CC-GO terms prediction are available at [LinkA](https://pan.baidu.com/s/1tNw8KxH6lhsUX4ATSW5wtQ "password:1234"), [LinkB](https://pan.baidu.com/s/1o4wauLflll75EkKopBY5Wg "password:1234"), [LinkC](https://pan.baidu.com/s/1kNR-OTnGDxFNOvcEJb4iSA "password:1234"), respectively.
+1. **_PDB-A_ vs _Expanded_**: Trained models for MF-, BP, CC-GO terms prediction are available at [Link](https://pan.baidu.com/s/1S76i0rgWDBfymcKeP3uD4A "password:1234")
+
+   Unzip this .rar file to **/data_collect/amplify_samples**
+
+2. **_PDB-B_ vs _AF_**: Trained models for MF-, BP-, CC-GO terms prediction are available at [LinkA](https://pan.baidu.com/s/1tNw8KxH6lhsUX4ATSW5wtQ "password:1234"), [LinkB](https://pan.baidu.com/s/1o4wauLflll75EkKopBY5Wg "password:1234"), [LinkC](https://pan.baidu.com/s/1kNR-OTnGDxFNOvcEJb4iSA "password:1234"), respectively.
 
    Unzip these model files(.pkl) downloaded above to **Struct2Go/data_collect/mf/model/**, **Struct2Go/data_collect/bp/model/** and **Struct2Go/data_collect/cc/model/**, respectively.
 
-2. Pre-trained Bi-LSTM language model is available at [LinkD](https://pan.baidu.com/s/1nTWUk4KeqXhnskRMq2Bm0A "password:1234").
+3. Pre-trained Bi-LSTM language model is available at [LinkD](https://pan.baidu.com/s/1nTWUk4KeqXhnskRMq2Bm0A "password:1234").
    
    Unzip the model file to **Struct2Go/saved_models/**.
 
 Test
 ---
-python test.py
+**_PDB-A_ vs _Expanded_**: python main_amplified_samples_test.py
+
+**_PDB-B_ vs _AF_**: python test.py
 
 Test for external validation set
 ---
@@ -35,8 +43,13 @@ python external_test.py
 
 Train
 ---
-python main.py
+**_PDB-A_ vs _Expanded_**: python main_amplified_samples.py
+
+**_PDB-B_ vs _AF_**: python main.py
 
 If you need pdb files we collectd:
 ---
-Experimental solved protein structures and AlphaFold predicted structures are available at [LinkE](https://pan.baidu.com/s/1p6E2UuLaih1Ehs59s8VbbQ "password:1234") and [LinkF](https://pan.baidu.com/s/1_mNskJfLNL9AiOZrDd71cA "password:1234"), respectively.
+Experimental solved protein structures (PDB-A) are available at [Link](https://pan.baidu.com/s/1DrzpvFDT-_dHsRYPuG7EpA "password:1234")
+
+Experimental solved protein structures (PDB-B) and AlphaFold predicted structures (AF) are available at [LinkE](https://pan.baidu.com/s/1p6E2UuLaih1Ehs59s8VbbQ "password:1234") and [LinkF](https://pan.baidu.com/s/1_mNskJfLNL9AiOZrDd71cA "password:1234"), respectively.
+
