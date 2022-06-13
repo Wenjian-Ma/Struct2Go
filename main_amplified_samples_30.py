@@ -300,7 +300,7 @@ def train(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--func', type=lambda s: [item for item in s.split(",")],
-                        default=['bp'], help="list of func to predict.")#'mf','bp',  ,'bp','cc'
+                        default=['mf','bp','cc'], help="list of func to predict.")#'mf','bp',  ,'bp','cc'
     parser.add_argument('--data', type=lambda s: [item for item in s.split(",")],
                         default=['pdb_no_amplifed','pdb_amplifed'], help="data source.")#'pdb_no_amplifed','pdb_amplifed'
     parser.add_argument('--learning_rate', type=float,
