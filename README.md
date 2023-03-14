@@ -12,7 +12,7 @@ PyG (torch-geometric) == 2.0.2
 
 numpy == 1.21.2
 
-Data preparation （The password for all files to be downloaded is 1234.）
+Data preparation （The password for all files to be downloaded is 1234）
 ---
 1. Unzip ''**contact_map_dense_alphafold_8.0.tar.gz**'', ''**contact_map_dense_pdb_8.0.tar.gz**'' and ''**contact_map_dense_pdb_8.0_for_external_test.tar.gz**'' to **Struct2Go/data_collect/**
 2. Unzip ''**contact_map_6582_8.0.tar.gz**'' to **Struct2Go/data_collect/amplify_samples/**
