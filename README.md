@@ -83,3 +83,19 @@ Experimental solved protein structures (PDB-A) are available at [Link](https://p
 
 Experimental solved protein structures (PDB-B) and AlphaFold predicted structures (AF) are available at [LinkE](https://pan.baidu.com/s/1p6E2UuLaih1Ehs59s8VbbQ "password:1234") and [LinkF](https://pan.baidu.com/s/1_mNskJfLNL9AiOZrDd71cA "password:1234"), respectively.
 
+Cite our work
+---
+if you use the conclusion, code, or data in our work, please cite:
+```
+@article{ma2022enhancing,
+  title={Enhancing protein function prediction performance by utilizing AlphaFold-predicted protein structures},
+  author={Ma, Wenjian and Zhang, Shugang and Li, Zhen and Jiang, Mingjian and Wang, Shuang and Lu, Weigang and Bi, Xiangpeng and Jiang, Huasen and Zhang, Henggui and Wei, Zhiqiang},
+  journal={Journal of Chemical Information and Modeling},
+  volume={62},
+  number={17},
+  pages={4008--4017},
+  year={2022},
+  publisher={ACS Publications}
+}
+```
+
